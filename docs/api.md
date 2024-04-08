@@ -73,7 +73,7 @@
     ```json
     {
         "code": 24,
-        "description": "可能包含敏感词",
+        "description": "Sensitive or Banned Word(s)",
         "properties": {
             "promptEn": "nude body",
             "bannedWord": "nude"
