@@ -69,7 +69,7 @@ public class SubmitController {
 		try {
 			BannedPromptUtils.checkBanned(promptEn);
 		} catch (BannedPromptException e) {
-			return SubmitResultVO.fail(ReturnCode.BANNED_PROMPT, "可能包含敏感词")
+			return SubmitResultVO.fail(ReturnCode.BANNED_PROMPT, "Banned Word")
 					.setProperty("promptEn", promptEn).setProperty("bannedWord", e.getMessage());
 		}
 		List<String> base64Array = Optional.ofNullable(imagineDTO.getBase64Array()).orElse(new ArrayList<>());
